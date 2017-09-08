@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Diginet time injection",
+  "description": "",
+  "version": "2.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://time.dgn.lt/*"
+      ],
+      "js": [
+        "magic.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "notifications",
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://time.dgn.lt/*"
+  ]
+}
